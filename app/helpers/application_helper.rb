@@ -9,4 +9,8 @@ module ApplicationHelper
     end
   end
 
+  def current_page?(page)
+    (params[:action] == page)? true:false
+  end
+
 end

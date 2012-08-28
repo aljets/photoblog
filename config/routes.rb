@@ -2,7 +2,7 @@ Photoblog::Application.routes.draw do
   root to: 'static_pages#home'
 
 
-  match "/bio", to: 'static_page#bio'
+  match "/bio", to: 'static_pages#bio'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

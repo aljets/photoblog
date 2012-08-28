@@ -1,9 +1,12 @@
 %header
   %nav
-    = link_to 'gallery', '#'
+    - #if params[:controller] == 'static_pages' && params[:action] == 'home'
+    = link_to 'home', root_path, id: current_page?('home')? 'current':''
     |
-    = link_to 'bio', bio_path
+    = link_to 'gallery', '#', id: current_page?('gallery')? 'current':''
+    |
+    = link_to 'bio', bio_path, id: current_page?('bio')? 'current':''
   #title
-    adamaljets.com
+    photoblog
     %span#subtitle | film + digital
   %br.clear

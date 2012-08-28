@@ -64,10 +64,17 @@ header {
   background-color: #fff;
 }
 nav {
-  font-family: georgia, helvetica, arial;
+  font-family: georgia, norasi, times, serif;
   font-size: 153.9%;
   color: #ddd;
   float: left;
+  a#current {
+    color: #aaa;
+    &:hover {
+      background-color: #fff;
+      text-decoration: none;
+    }
+  }
 }
 a {
   color: #63bcf4;
@@ -79,7 +86,7 @@ a {
 }
 #title {
   text-align: right;
-  font-family: georgia, helvetica, arial;
+  font-family: georgia, norasi, times, serif;
   font-size: 153.9%;
   color: #777;
   float: right;
@@ -91,7 +98,7 @@ a {
   background-color: #fff;
   margin: 0 auto 15px auto;
   clear: both;
-  font-family: georgia, helvetica, arial;
+  font-family: georgia, norasi, times, serif;
   font-size: 150%;
   color: #777;
   padding: 50px;
