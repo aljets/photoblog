@@ -11,6 +11,7 @@ gem 'debugger', '1.2.0'
 
 group :development do
   gem 'annotate', '2.5.0'
+  gem 'haml-rails', '0.3.4'
 end
 
 group :development, :test do
