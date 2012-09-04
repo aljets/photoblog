@@ -1,0 +1,9 @@
+defaults: &defaults
+  site_name: 'photoblog'
+
+development: &dev
+  <<: *defaults
+  
+
+production:
+  <<: *defaults

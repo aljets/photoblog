@@ -57,6 +57,7 @@ body {
   background-color: #f3f3f3;
   margin: 0 auto 0 auto;
   padding: 20px;
+  width: 900px;
 }
 header {
   padding: 15px;
@@ -66,13 +67,25 @@ header {
 nav {
   font-family: georgia, norasi, times, serif;
   font-size: 153.9%;
-  color: #ddd;
+  color: #aaa;
   float: left;
   a#current {
     color: #aaa;
     &:hover {
       background-color: #fff;
       text-decoration: none;
+    }
+  }
+  ul {
+    display: inline;
+    li {
+      display: inline;
+      &:before {
+      display: inline;
+      content: '|';
+      margin-right: 10px;
+      color: #eaeaea;
+    }
     }
   }
 }
@@ -84,15 +97,12 @@ a {
     background-color: #f5f5f5;
   }
 }
-#title {
+#subtitle {
   text-align: right;
   font-family: georgia, norasi, times, serif;
   font-size: 153.9%;
-  color: #777;
+  color: #ccc;
   float: right;
-  #subtitle {
-    font-size: 1em;
-  }
 }
 #container {
   background-color: #fff;

@@ -1,12 +1,10 @@
 %header
   %nav
-    - #if params[:controller] == 'static_pages' && params[:action] == 'home'
-    = link_to 'home', root_path, id: current_page?('home')? 'current':''
-    |
-    = link_to 'gallery', '#', id: current_page?('gallery')? 'current':''
-    |
-    = link_to 'bio', bio_path, id: current_page?('bio')? 'current':''
-  #title
-    photoblog
-    %span#subtitle | film + digital
+    %span#logo
+      = link_to_unless params[:action] == 'home', 'gallery', root_path
+    %ul
+      %li= link_to_unless params[:action] == 'bio', 'bio', bio_path
+  #subtitle
+    %ul
+      %li= link_to_unless params[:action] == 'gallery', 'view archives', '#'
   %br.clear
