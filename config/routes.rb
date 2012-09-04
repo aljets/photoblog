@@ -1,8 +1,13 @@
 Photoblog::Application.routes.draw do
   root to: 'static_pages#home'
+  
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
-
-  match "/bio", to: 'static_pages#bio'
+  match '/admin/signup',  to: 'users#new'
+  match '/admin',         to: 'sessions#new'
+  match '/admin/signout', to: 'sessions#destroy', via: :delete
+  match "/bio",           to: 'static_pages#bio'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

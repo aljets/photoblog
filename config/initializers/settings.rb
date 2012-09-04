@@ -1,3 +1,8 @@
+# Move to beginning of environment.rb file if need to use Settings
+# in application.rb, environment.rb, development.rb, etc.
+#
+# Code thanks to http://smashingboxes.com/plain-old-ruby-object-for-app-settings/
+
 class Settings
   def self.method_missing(sym, *args, &block)
     return false
